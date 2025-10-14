@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="BondSketch - Professional Chemical Structure Editor | Molecule Drawing Tool">
+    <meta name="description" content="BondSketch - Professional chemical structure drawing and editing tool. Draw molecules, copy to/from Word documents, convert names to structures, and collaborate with cloud storage. Powered by Ketcher. Free trial available.">
+    <meta name="keywords" content="chemistry software, chemical structure editor, molecule editor, structure drawing, chemical drawing, Word integration, copy paste structures, IUPAC name converter, SMILES editor, MOL file editor, chemistry drawing tool, molecular structure, benzene ring, chemical formula, organic chemistry, ketcher editor, chemistry app">
+    <meta name="author" content="BondSketch">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4F46E5">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bondsketch.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bondsketch.com/">
+    <meta property="og:title" content="BondSketch - Professional Chemical Structure Editor">
+    <meta property="og:description" content="Draw chemical structures with precision. Professional molecule editor powered by Ketcher. Copy structures to/from Word, convert IUPAC names to structures, export to multiple formats. Free trial available.">
+    <meta property="og:image" content="https://bondsketch.com/og-image.png">
+    <meta property="og:site_name" content="BondSketch">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bondsketch.com/">
+    <meta property="twitter:title" content="BondSketch - Professional Chemical Structure Editor">
+    <meta property="twitter:description" content="Draw chemical structures with precision. Copy to/from Word documents seamlessly. Professional molecule editor powered by Ketcher. Free trial available.">
+    <meta property="twitter:image" content="https://bondsketch.com/twitter-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://app.bondsketch.com">
+    <link rel="dns-prefetch" href="https://app.bondsketch.com">
+
+    <title>BondSketch - Professional Chemical Structure Editor | Molecule Drawing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "BondSketch",
+      "applicationCategory": "DesignApplication",
+      "applicationSubCategory": "Chemical Structure Editor",
+      "operatingSystem": "Web Browser",
+      "description": "Professional chemical structure drawing and editing tool. Draw molecules, copy to/from Word documents, convert names to structures, and collaborate with cloud storage.",
+      "url": "https://bondsketch.com",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Basic Plan",
+          "price": "1.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "eligibleRegion": {
+            "@type": "Place",
+            "name": "Worldwide"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Plus Plan",
+          "price": "4.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "eligibleRegion": {
+            "@type": "Place",
+            "name": "Worldwide"
+          }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": [
+        "Chemical structure editor",
+        "Copy structures to Word documents",
+        "Copy from Word back to editor (Plus plan)",
+        "Name to structure conversion",
+        "Structure to name conversion",
+        "Multiple export formats (PNG, SVG, MOL, SMILES, InChI)",
+        "Cloud storage",
+        "Templates library"
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "BondSketch",
+        "url": "https://bondsketch.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bondsketch.com/logo.png"
+        }
+      },
+      "screenshot": "https://bondsketch.com/screenshot.png"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BondSketch",
+      "url": "https://bondsketch.com",
+      "logo": "https://bondsketch.com/logo.png",
+      "description": "Professional chemical structure editor for chemists and researchers",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-brand">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BondSketch Logo">
+                    <title>BondSketch Logo</title>
+                    <!-- Version A: Simple "K" with atoms at key connection points -->
+                    <!-- Vertical backbone of K -->
+                    <line x1="10" y1="6" x2="10" y2="26" stroke="currentColor" stroke-width="2"/>
+                    <!-- Upper diagonal -->
+                    <line x1="10" y1="16" x2="24" y2="6" stroke="currentColor" stroke-width="2"/>
+                    <!-- Lower diagonal -->
+                    <line x1="10" y1="16" x2="24" y2="26" stroke="currentColor" stroke-width="2"/>
+                    <!-- Atoms at key connection points -->
+                    <circle cx="10" cy="6" r="2" fill="currentColor"/>
+                    <circle cx="10" cy="16" r="2" fill="currentColor"/>
+                    <circle cx="10" cy="26" r="2" fill="currentColor"/>
+                    <circle cx="24" cy="6" r="2" fill="currentColor"/>
+                    <circle cx="24" cy="26" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">BondSketch</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="https://app.bondsketch.com/login" class="btn-link">Login</a>
+                <a href="https://app.bondsketch.com/register" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Draw Chemical Structures with Precision</h1>
+                <p class="hero-subtitle">Professional molecule editor powered by Ketcher. Create, edit, and share chemical structures with ease.</p>
+                <div class="hero-cta">
+                    <a href="https://app.bondsketch.com/register" class="btn btn-primary btn-large">Get Started Free</a>
+                    <a href="#pricing" class="btn btn-secondary btn-large">View Pricing</a>
+                </div>
+                <p class="hero-note">Starting at $1.99/month • 7-day free trial</p>
+            </div>
+            <div class="hero-image">
+                <div class="browser-window">
+                    <div class="browser-chrome">
+                        <div class="browser-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="browser-url">app.bondsketch.com</div>
+                    </div>
+                    <div class="browser-content">
+                        <img src="assets/screenshot.png" alt="BondSketch chemical structure editor interface" class="screenshot-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features for Chemists</h2>
+            <p class="section-subtitle">Everything you need to draw and manage chemical structures</p>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" role="img" aria-label="Structure Editor Icon">
+                            <title>Structure Editor</title>
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                            <path d="M2 17L12 22L22 17"/>
+                            <path d="M2 12L12 17L22 12"/>
+                        </svg>
+                    </div>
+                    <h3>Structure Editor</h3>
+                    <p>Intuitive interface for drawing complex molecules with precision. Support for rings, chains, and functional groups.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" role="img" aria-label="Name to Structure Conversion Icon">
+                            <title>Name to Structure Conversion</title>
+                            <circle cx="10" cy="10" r="7"/>
+                            <line x1="15" y1="15" x2="21" y2="21"/>
+                            <!-- A -->
+                            <g stroke="currentColor" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 13.6 L10 7 L13 13.6"/>
+                                <line x1="8.2" y1="11.2" x2="11.8" y2="11.2"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Name to Structure</h3>
+                    <p>Convert IUPAC names and common chemical names directly into structure diagrams instantly.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" role="img" aria-label="Structure to Name Conversion Icon">
+                            <title>Structure to Name Conversion</title>
+                            <!-- Magnifying glass -->
+                            <circle cx="10" cy="10" r="7"/>
+                            <line x1="15" y1="15" x2="21" y2="21"/>
+                            <!-- Benzene ring inside magnifying glass -->
+                            <g stroke-width="0.8" stroke-linejoin="round">
+                                <!-- Hexagon outline -->
+                                <path d="M10 5.5 L13.9 7.75 L13.9 12.25 L10 14.5 L6.1 12.25 L6.1 7.75 Z"/>
+                                <!-- Alternating double bonds -->
+                                <line x1="13.12" y1="8.31" x2="13.12" y2="11.69"/>
+                                <line x1="9.91" y1="13.55" x2="6.97" y2="11.86"/>
+                                <line x1="6.97" y1="8.14" x2="9.91" y2="6.45"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Structure to Name</h3>
+                    <p>Generate systematic IUPAC names from your drawn structures automatically.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" role="img" aria-label="Multiple Export Formats Icon">
+                            <title>Multiple Export Formats</title>
+                            <path d="M21 15V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3>Multiple Formats</h3>
+                    <p>Export structures in various formats: PNG, SVG, MOL, SMILES, InChI, and more.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" role="img" aria-label="Templates Library Icon">
+                            <title>Templates Library</title>
+                            <path d="M17 21V13H7V21"/>
+                            <path d="M7 3V8H15"/>
+                            <path d="M15 8L21 21V8H15Z"/>
+                        </svg>
+                    </div>
+                    <h3>Templates Library</h3>
+                    <p>Quick access to common structures, functional groups, and reaction templates.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Cloud Storage Icon">
+                            <title>Cloud Storage</title>
+                            <path d="M18 16C19.7 16 21 14.7 21 13C21 11.3 19.7 10 18 10C17.8 8.3 16.4 7 14.5 7C13.3 7 12.2 7.6 11.6 8.5C11.2 8.2 10.6 8 10 8C8.3 8 7 9.3 7 11C5.3 11 4 12.3 4 14C4 15.7 5.3 17 7 17H18V16Z"/>
+                        </svg>
+                    </div>
+                    <h3>Cloud Storage</h3>
+                    <p>Save and access your structures from anywhere with our secure cloud storage (Plus plan).</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Choose the plan that fits your needs</p>
+
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">$1.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="plan-price-alt">
+                            <span class="price-amount-alt">$16.99</span>
+                            <span class="price-period-alt">/year</span>
+                            <span class="price-savings">Save 29%</span>
+                        </div>
+                        <p class="plan-description">Perfect for students and occasional use</p>
+                    </div>                    <ul class="plan-features">
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Full structure editor
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Name to structure conversion
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Structure to name conversion
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Copy structures to Word
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Export to multiple formats
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Templates library
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Local storage only
+                        </li>
+                    </ul>
+                    <a href="https://app.bondsketch.com/register?plan=basic" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+
+                <!-- Plus Plan -->
+                <div class="pricing-card pricing-card-featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Plus</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">$4.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="plan-price-alt">
+                            <span class="price-amount-alt">$48.99</span>
+                            <span class="price-period-alt">/year</span>
+                            <span class="price-savings">Save 18%</span>
+                        </div>
+                        <p class="plan-description">For professionals and research teams</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            <strong>Everything in Basic</strong>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            <strong>Copy FROM Word back to editor</strong>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Cloud storage for structures
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Save and load from anywhere
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Backend integration
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Priority support
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Advanced features
+                        </li>
+                    </ul>
+                    <a href="https://app.bondsketch.com/register?plan=plus" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p>7-day free trial • No credit card required • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2 class="cta-title">Ready to Start Drawing?</h2>
+                <p class="cta-subtitle">Join chemists and researchers using BondSketch every day</p>
+                <a href="https://app.bondsketch.com/register" class="btn btn-primary btn-large">Get Started Free</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BondSketch Logo">
+                            <title>BondSketch Logo</title>
+                            <!-- Version A: Simple "K" with atoms at key connection points -->
+                            <!-- Vertical backbone of K -->
+                            <line x1="10" y1="6" x2="10" y2="26" stroke="currentColor" stroke-width="2"/>
+                            <!-- Upper diagonal -->
+                            <line x1="10" y1="16" x2="24" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <!-- Lower diagonal -->
+                            <line x1="10" y1="16" x2="24" y2="26" stroke="currentColor" stroke-width="2"/>
+                            <!-- Atoms at key connection points -->
+                            <circle cx="10" cy="6" r="2" fill="currentColor"/>
+                            <circle cx="10" cy="16" r="2" fill="currentColor"/>
+                            <circle cx="10" cy="26" r="2" fill="currentColor"/>
+                            <circle cx="24" cy="6" r="2" fill="currentColor"/>
+                            <circle cx="24" cy="26" r="2" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">BondSketch</span>
+                    </div>
+                    <p class="footer-description">Professional chemical structure editor powered by Ketcher</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="https://app.bondsketch.com">App</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> BondSketch. All rights reserved.</p>
+                <p>Powered by <a href="https://github.com/epam/ketcher" target="_blank" rel="noopener">Ketcher</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

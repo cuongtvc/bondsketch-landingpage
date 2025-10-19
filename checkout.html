@@ -19,11 +19,6 @@
     <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8WWTSGD"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <main class="checkout-container">
         <div class="checkout-card">
             <!-- Logo Section -->
@@ -281,7 +276,10 @@
                     priceId: product.priceId,
                     quantity: 1
                 }],
-                customer: customerInfo
+                customer: customerInfo,
+                customData: {
+                    email: emailFromUrl
+                }
             });
         });
     </script>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout - BondSketch</title>
+    <meta name="description" content="Complete your BondSketch purchase securely. Professional chemical structure editor with Word integration.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+
+    <!-- Paddle.js -->
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8WWTSGD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="checkout-container">
+        <div class="checkout-card">
+            <!-- Logo Section -->
+            <div class="checkout-header">
+                <div class="checkout-logo">
+                    <img src="logo.svg" alt="BondSketch Logo" width="40" height="40">
+                </div>
+                <h1 class="checkout-title">Secure Payment</h1>
+                <p class="checkout-subtitle">Complete your BondSketch purchase securely</p>
+            </div>
+
+            <!-- Product Selection -->
+            <div class="plan-selector">
+                <h2 class="plan-selector-title">Select Your Plan</h2>
+
+                <!-- Basic Plans -->
+                <div class="plan-category">
+                    <div class="plan-category-header">
+                        <h3 class="plan-category-title">Basic Plan</h3>
+                    </div>
+                    <div class="plan-options">
+                        <div class="plan-option">
+                            <input type="radio" name="product" value="basic-monthly" id="basic-monthly">
+                            <label class="plan-option-label" for="basic-monthly">
+                                <div class="plan-option-radio"></div>
+                                <div class="plan-option-content">
+                                    <div class="plan-option-header">
+                                        <div class="plan-option-name">
+                                            <span>Monthly</span>
+                                        </div>
+                                        <div class="plan-option-price">
+                                            $1.99<span class="plan-option-price-period">/mo</span>
+                                        </div>
+                                    </div>
+                                    <p class="plan-option-description">Perfect for students and occasional use</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="plan-option">
+                            <input type="radio" name="product" value="basic-annual" id="basic-annual">
+                            <label class="plan-option-label" for="basic-annual">
+                                <div class="plan-option-radio"></div>
+                                <div class="plan-option-content">
+                                    <div class="plan-option-header">
+                                        <div class="plan-option-name">
+                                            <span>Annual</span>
+                                            <span class="price-savings">Save 29%</span>
+                                        </div>
+                                        <div class="plan-option-price">
+                                            $16.99<span class="plan-option-price-period">/yr</span>
+                                        </div>
+                                    </div>
+                                    <p class="plan-option-description">$1.42/month when billed annually</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plus Plans -->
+                <div class="plan-category">
+                    <div class="plan-category-header">
+                        <h3 class="plan-category-title">Plus Plan</h3>
+                        <span class="badge badge-popular">Most Popular</span>
+                    </div>
+                    <div class="plan-options">
+                        <div class="plan-option">
+                            <input type="radio" name="product" value="plus-monthly" id="plus-monthly">
+                            <label class="plan-option-label" for="plus-monthly">
+                                <div class="plan-option-radio"></div>
+                                <div class="plan-option-content">
+                                    <div class="plan-option-header">
+                                        <div class="plan-option-name">
+                                            <span>Monthly</span>
+                                        </div>
+                                        <div class="plan-option-price">
+                                            $4.99<span class="plan-option-price-period">/mo</span>
+                                        </div>
+                                    </div>
+                                    <p class="plan-option-description">For professionals and research teams</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="plan-option">
+                            <input type="radio" name="product" value="plus-annual" id="plus-annual" checked>
+                            <label class="plan-option-label" for="plus-annual">
+                                <div class="plan-option-radio"></div>
+                                <div class="plan-option-content">
+                                    <div class="plan-option-header">
+                                        <div class="plan-option-name">
+                                            <span>Annual</span>
+                                            <span class="price-savings">Save 18%</span>
+                                        </div>
+                                        <div class="plan-option-price">
+                                            $48.99<span class="plan-option-price-period">/yr</span>
+                                        </div>
+                                    </div>
+                                    <p class="plan-option-description">$4.08/month when billed annually</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complete Purchase Button -->
+            <button id="checkout-button" class="btn btn-primary btn-block">
+                Complete Purchase
+            </button>
+
+            <!-- Status Section -->
+            <div id="status" class="status-message status-error">
+                <p></p>
+            </div>
+
+            <!-- Security Footer -->
+            <div class="security-footer">
+                <div class="security-badges">
+                    <div class="security-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                        <span>SSL Encrypted</span>
+                    </div>
+                    <div class="security-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                        <span>Secure Payment</span>
+                    </div>
+                </div>
+                <p class="security-text">Powered by <a href="https://paddle.com" target="_blank">Paddle</a></p>
+                <p class="security-text">Your payment information is secure and encrypted</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Get parameters from URL query string
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Get environment from URL query parameters
+        const environmentFromUrl = urlParams.get('environment');
+        Paddle.Environment.set(environmentFromUrl || "sandbox");
+
+        // Initialize Paddle with your client-side token
+        Paddle.Initialize({
+            token: 'live_06280ba4480de1a69745f18f965',
+            checkout: {
+                settings: {
+                    displayMode: "overlay",
+                    theme: "light",
+                    locale: "en"
+                }
+            }
+        });
+
+        // Product definitions with Paddle price IDs
+        const products = {
+            'basic-monthly': {
+                priceId: 'pri_01k7xfh5mq4xwebq8y1vf25j6m',
+                name: 'Basic Monthly',
+                price: '$1.99/month',
+                description: 'Perfect for students and occasional use'
+            },
+            'basic-annual': {
+                priceId: 'pri_01k7xfm1dz875ey0p42ykapb7s',
+                name: 'Basic Annual',
+                price: '$16.99/year',
+                description: 'Save 29% • $1.42/month when billed annually'
+            },
+            'plus-monthly': {
+                priceId: 'pri_01k7xfnn0esxtnpdzc517705s3',
+                name: 'Plus Monthly',
+                price: '$4.99/month',
+                description: 'For professionals and research teams'
+            },
+            'plus-annual': {
+                priceId: 'pri_01k7xfq1xgr7gzae3qz54gfeyd',
+                name: 'Plus Annual',
+                price: '$48.99/year',
+                description: 'Save 18% • $4.08/month when billed annually'
+            }
+        };
+
+        // Get email and plan from URL query parameters
+        const emailFromUrl = urlParams.get('email');
+        const planFromUrl = urlParams.get('plan');
+
+        // Check if plan is specified in URL
+        if (planFromUrl && products[planFromUrl]) {
+            // Hide plan selector and show selected plan summary
+            document.querySelector('.plan-selector').style.display = 'none';
+
+            // Create and show plan summary
+            const product = products[planFromUrl];
+            const summaryHtml = `
+                <div class="plan-summary">
+                    <h2 class="plan-summary-title">Selected Plan</h2>
+                    <div class="plan-summary-card">
+                        <div class="plan-summary-name">${product.name}</div>
+                        <div class="plan-summary-price">${product.price}</div>
+                        <div class="plan-summary-description">${product.description}</div>
+                    </div>
+                </div>
+            `;
+            document.querySelector('.plan-selector').insertAdjacentHTML('beforebegin', summaryHtml);
+
+            // Auto-click checkout button after a brief delay
+            setTimeout(() => {
+                document.getElementById('checkout-button').click();
+            }, 500);
+        }
+
+        // Handle checkout button click
+        document.getElementById('checkout-button').addEventListener('click', function() {
+            let productKey;
+
+            // Check if plan is from URL or from user selection
+            if (planFromUrl && products[planFromUrl]) {
+                productKey = planFromUrl;
+            } else {
+                const selectedProduct = document.querySelector('input[name="product"]:checked');
+
+                if (!selectedProduct) {
+                    // Show error if no product selected
+                    const status = document.getElementById('status');
+                    status.classList.add('show');
+                    status.querySelector('p').textContent = 'Please select a plan to continue';
+                    return;
+                }
+
+                productKey = selectedProduct.value;
+            }
+
+            // Hide error message if shown
+            const status = document.getElementById('status');
+            status.classList.remove('show');
+
+            const product = products[productKey];
+
+            // Define customer details
+            let customerInfo = {};
+            if (emailFromUrl) {
+                customerInfo.email = emailFromUrl;
+            }
+
+            // Open Paddle checkout
+            Paddle.Checkout.open({
+                items: [{
+                    priceId: product.priceId,
+                    quantity: 1
+                }],
+                customer: customerInfo
+            });
+        });
+    </script>
+</body>
+</html>

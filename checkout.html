@@ -168,9 +168,20 @@
         const environmentFromUrl = urlParams.get('environment');
         Paddle.Environment.set(environmentFromUrl || "sandbox");
 
+        // Get app URL for post-checkout redirect
+        const appUrl = urlParams.get('appUrl');
+
         // Initialize Paddle with your client-side token
         Paddle.Initialize({
             token: 'test_871b65c4c399ad1d52756c3986f',
+            eventCallback: function(data) {
+                if (data.name === "checkout.completed") {
+                    // Redirect to app with success parameter
+                    if (appUrl) {
+                        window.location.href = appUrl + '?checkout=success';
+                    }
+                }
+            },
             checkout: {
                 settings: {
                     displayMode: "overlay",
